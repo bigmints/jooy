@@ -1,12 +1,12 @@
 ---
-title: "Child Gate"
+title: "Camping Tent"
 description: "Best indoor plant to have fresh air."
 category: 'Plants'
 date: 2018-11-18T12:33:46+10:00
 weight: 1
 priceBefore: '2399.00'
 priceAfter: '1799.00'
-image: 'https://images.unsplash.com/photo-1542407932-04aa0ca7266a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80'
+image: '/images/products/tent.png'
 ---
 
 Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia

@@ -1,5 +1,5 @@
 ---
-title: "Organic Pepper"
+title: "വിഷമില്ലാത്ത നാടൻ കുരുമുളക്."
 description: "Best indoor plant to have fresh air."
 category: 'Plants'
 date: 2018-11-18T12:33:46+10:00

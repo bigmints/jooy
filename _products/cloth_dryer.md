@@ -6,7 +6,7 @@ date: 2018-11-18T12:33:46+10:00
 weight: 1
 priceBefore: '2399.00'
 priceAfter: '1799.00'
-image: 'https://images.unsplash.com/photo-1661712167747-e05333ce4c77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80'
+image: '/images/products/clothstand.png'
 ---
 
 Business advisory is the final tier of the accounting pyramid. Business advisory involves reporting on performance as well as advising on strategic plans, risk assessment, and succession plans.
