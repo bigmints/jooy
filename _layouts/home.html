@@ -3,10 +3,12 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro" style="background: url('{{ page.intro_image | relURL }}')">
+<div class="intro">
   <div class="container">
-    <div class="row justify-content-start">
+    <div class="jumbotron">
+      <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <span class="badge badge-light">FEATURED</span>
         {{ content }}
         {% if page.show_call_box %}
           {% include call.html show_button=true %}
@@ -14,32 +16,47 @@ bodyClass: "page-home"
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-       
+        <img alt="{{ page.title }}" class="intro-image intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
       </div>
       {% endif %}
     </div>
+    </div>
   </div>
 </div>
+<div class="strip"><div class="container">
+  <h1>Featured Products</h1>
+  <!-- <p class="service service-summary">Featured products this week</p> -->
+
+
+</div></div>
+
+
 <div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
+  <div class="container pt-0 pb-6 pb-md-10">
     <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 3 %}
-      {% for service in site.services limit: limit %}
+      {% assign limit = site.home.limit_products | default: 12 %}
+      {% for product in site.products limit: limit %}
       <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
+        <div class="card">
+          <div class="image-cover" style="background: url('{{product.image}}');"><img src="" class="card-img-top" /></div>
+          
+          <div class="card-body">
+            <span class="badge badge-light">{{ product.category }}</span>
             <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
-          </div>
+              <a href="{{ product.url | relative_url }}">{{ product.title }}</a></h2>
+              <h6 class="card-subtitle mb-2 "><del class="text-muted">₹{{product.priceBefore}}</del> <mark> ₹{{product.priceAfter}} </mark></h6>
+              <!-- <p class="card-text service service-summary">{{ product.description | truncate: 100 }}</p> -->
+              <a href="#" class="btn btn-primary">Buy Now</a> 
+              <a href="{{ product.url | relative_url }}" class="card-link">View Details</a>
+              <!-- <a href="#" class="card-link">Another link</a> -->
+            </div>
         </div>
       </div>
       {% endfor %}
     </div>
     <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+      <div class="col-auto pt-4 pb-0">
+        <a class="btn btn-dark" href="{{ "products" | relative_url }}">View More Products</a>
       </div>
     </div>
   </div>

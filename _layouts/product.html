@@ -1,13 +1,33 @@
 ---
 layout: default
-bodyClass: "page-team"
+bodyClass: "page-product"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="container pb-6 pt-0 pt-md-10 pb-md-10">
   <div class="row justify-content-start">
+    <div class="col-12 col-md-7"> <div class="card"><img src="{{page.image}}" class="img-fluid"/></div></div>
+    <div class="col-12 col-md-5">
+      <div class="pb-2 pt-0 pt-md-2 pb-md-2">
+      <h1 class="title">{{page.title}}</h1>
+      <p>{{ page.description}}</p>
+      <h6 class="card-subtitle mb-2"><del class="text-muted">₹{{page.priceBefore}}</del> <mark> ₹{{page.priceAfter}} </mark></h6>
+      <!-- <p class="card-text service service-summary">{{ product.content | markdownify | strip_html | truncate: 100 }}</p> -->
+      <a href="#" class="btn btn-primary">Order Now</a> <a href="#" class="btn btn-info">Share with a friend</a>
+      </div>
+      <p><span class="badge badge-dark">OFFER</span> Free same day delivery !</p>
+      <p><mark> Hurry </mark> Only 7 Units in stock</p>
+    
+
+    </div>
+   
+   
+ 
+   
+  </div>
+ 
+  <div class="row justify-content-start pb-2 pt-5 pt-md-5 pb-md-5">
     <div class="col-12 col-md-8">
-      <div class="team team-single">
-        <h1 class="title">{{page.title}}</h1>
+      <div class="service service-single">
         <div class="content">{{content}}</div>
       </div>
     </div>

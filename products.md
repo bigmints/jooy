@@ -1,13 +1,12 @@
 ---
 title: Products
 layout: products
-description: Product
-permalink: "/products/"
+description: Products
 intro_image: "images/illustrations/reading.svg"
 intro_image_absolute: true
-intro_image_hide_on_mobile: false
+intro_image_hide_on_mobile: true
 ---
 
-# Build excellent customer relationships
+# Services that grow with your business
 
-We have developed tools and services in-house to enable small businesses to start their transformation journey just with few clicks.
+Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.

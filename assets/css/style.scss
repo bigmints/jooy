@@ -2,12 +2,12 @@
 ---
 
 // Colors
-$primary: #219D7F;
-$primary-dark: #145949;
-$secondary: #000000;
-$black: #000000;
+$primary: #e5261f;
+$primary-dark: #a01b16;
+$secondary: #f88379;
+$black: #2f2f41;
 $white: #ffffff;
-$white-offset: #f8f8f8;
+$white-offset: #fff6f8;
 $steel: #5c5a5a;
 
 // Links
@@ -17,7 +17,7 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Lato, Arial, sans-serif, -apple-system;
+$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: "Playfair Display", serif, -apple-system;
 
 // Footer
@@ -30,7 +30,7 @@ $sub-footer-text-color: $white;
 @import "bootstrap-variables";
 @import "bootstrap/bootstrap-reboot";
 @import "bootstrap/bootstrap-grid";
-// @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
+@import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
 
 // Libraries
 @import "libraries/hamburgers/hamburgers";
@@ -69,4 +69,16 @@ body {
     font-size: 16px;
     line-height: 1.3;
   }
+
+}
+.image-cover{
+  display: block;
+  background-size: cover !important;
+  min-height: 200px;
+  overflow: hidden;
+  background-position: 0,0 !important;
+  border-radius: 4px 4px 0px 0px;
+}
+.intro-image{
+  border-radius: 4px;
 }

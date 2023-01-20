@@ -1,6 +1,6 @@
-baseurl: ''
+baseurl: '/'
 permalink: pretty
-title: 'Jooy'
+title: 'Jekyll Serif'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
@@ -11,15 +11,9 @@ logo:
   desktop_width: "120px"
 
 home: 
-  limit_services: 3
+  limit_services: 6
 
 collections:
-  services:
-    output: true
-    sort_by: weight
-  industries:
-    output: true
-    sort_by: weight
   products:
     output: true
     sort_by: weight
@@ -29,24 +23,14 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "industries"
+      type: "products"
     values:
-      layout: "industry"
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
+      layout: "product"
   - scope:
       path: ""
       type: "team"
     values:
       layout: "team"
-  - scope:
-      path: ""
-      type: "products"
-    values:
-      layout: "product"
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
