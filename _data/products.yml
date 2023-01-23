@@ -1,0 +1,16 @@
+- title: "1"
+  description: "Best indoor plant to have fresh air."
+  category: 'Plants'
+  date: 2018-11-18T12:33:46+10:00
+  weight: 1
+  priceBefore: '2399.00'
+  priceAfter: '1799.00'
+  image: '/images/products/clothstand.png'
+- title: "2"
+  description: "Best indoor plant to have fresh air."
+  category: 'Plants'
+  date: 2018-11-18T12:33:46+10:00
+  weight: 1
+  priceBefore: '2399.00'
+  priceAfter: '1799.00'
+  image: '/images/products/clothstand.png'
