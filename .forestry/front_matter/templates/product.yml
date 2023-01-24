@@ -1,0 +1,31 @@
+---
+label: product
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: category
+  label: category
+- type: datetime
+  name: date
+  label: date
+- type: number
+  name: weight
+  label: weight
+- type: boolean
+  name: featured
+  label: featured
+- type: text
+  name: priceBefore
+  label: priceBefore
+- type: text
+  name: priceAfter
+  label: priceAfter
+- type: image_gallery
+  name: photos
+  label: photos
