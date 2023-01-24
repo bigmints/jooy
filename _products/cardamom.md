@@ -8,7 +8,7 @@ featured: false
 priceBefore: '2399.00'
 priceAfter: '1799.00'
 photos: 
-  - 'https://images.unsplash.com/photo-1622824497447-b284a5493027?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1907&q=80'
+  - '/images/products/cardamom.png'
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

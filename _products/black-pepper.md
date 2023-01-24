@@ -8,7 +8,7 @@ featured: true
 priceBefore: '2399.00'
 priceAfter: '1799.00'
 photos: 
-  - 'https://images.unsplash.com/photo-1600728255690-edd070021d02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2326&q=80'
+  - '/images/products/black-pepper.png'
 ---
 
 Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,
