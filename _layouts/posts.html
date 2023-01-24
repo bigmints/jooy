@@ -1,6 +1,6 @@
 ---
 layout: default
-bodyClass: "page-blog"
+bodyClass: "page-posts"
 ---
 <div class="intro">
   <div class="container">
@@ -17,8 +17,11 @@ bodyClass: "page-blog"
   </div>
 </div>
 
+<div class="container">
+  {% for post in site.posts %}
+  <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1> 
+ {% endfor %}
 
-    {% for post in site.blog %}
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    {% endfor %}
+</div>
+    
     

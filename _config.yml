@@ -17,6 +17,8 @@ collections:
   products:
     output: true
     sort_by: weight
+  posts:
+    output: true
   team:
     output: true
 
@@ -28,9 +30,9 @@ defaults:
       layout: "product"
   - scope:
       path: ""
-      type: "blog"
+      type: "posts"
     values:
-      layout: "blog-post"
+      layout: "post"
   - scope:
       path: ""
       type: "team"

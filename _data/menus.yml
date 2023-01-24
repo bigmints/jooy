@@ -7,7 +7,7 @@ main:
   #   weight: 3
   - name: "Blog"
     url: "/blog/"
-    weight: 5
+    weight: 4
   - name: "Support"
     url: "/support/"
     weight: 5
