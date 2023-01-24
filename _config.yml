@@ -1,4 +1,4 @@
-baseurl: '/'
+baseurl: ''
 permalink: pretty
 title: 'JooY.in'
 
@@ -17,7 +17,7 @@ collections:
   products:
     output: true
     sort_by: weight
-  posts:
+  blog:
     output: true
   team:
     output: true
@@ -30,14 +30,10 @@ defaults:
       layout: "product"
   - scope:
       path: ""
-      type: "posts"
+      type: "blog"
     values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
+      layout: "blogpost"
+
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
