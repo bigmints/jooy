@@ -4,6 +4,7 @@ description: Best indoor plant to have fresh air.
 category: Plants
 date: 2018-11-18 02:33:46 +0000
 weight: "1"
+featured: false
 priceBefore: '2399.00'
 priceAfter: '1799.00'
 photos:
