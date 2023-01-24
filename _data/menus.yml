@@ -5,12 +5,13 @@ main:
   # - name: "Team"
   #   url: "/team/"
   #   weight: 3
-  - name: "About"
-    url: "/about/"
-    weight: 4
-  - name: "Contact"
-    url: "/contact/"
+  - name: "Blog"
+    url: "/blog/"
     weight: 5
+  - name: "Support"
+    url: "/support/"
+    weight: 5
+  
 
 footer:
   - name: "Home"
@@ -19,3 +20,10 @@ footer:
   - name: "Contact"
     url: "/contact/"
     weight: 2
+  - name: "Support"
+    url: "/support/"
+    weight: 2
+  - name: "About"
+    url: "/about/"
+    weight: 4
+

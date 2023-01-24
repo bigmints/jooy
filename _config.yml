@@ -1,6 +1,6 @@
 baseurl: '/'
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'JooY.in'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
@@ -26,6 +26,11 @@ defaults:
       type: "products"
     values:
       layout: "product"
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "blog-post"
   - scope:
       path: ""
       type: "team"
