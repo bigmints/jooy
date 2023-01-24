@@ -27,7 +27,7 @@ bodyClass: "page-products"
         <div class="image-cover" style="background: url('{{product.photos[0]}}');"><img src="" class="card-img-top" /></div>
         
         <div class="card-body">
-          <span class="badge badge-light">{{ product.category }}</span>
+          <span class="overlay-badge"><span class="badge badge-light">{{ product.category }}</span></span>
           <h3 class="service-title">
             <a href="{{ product.url | relative_url }}">{{ product.title }}</a></h3>
             <h6 class="card-subtitle mb-2 "><del class="text-muted">₹{{product.priceBefore}}</del> <mark> ₹{{product.priceAfter}} </mark></h6>

@@ -1,20 +1,19 @@
 ---
-title: "വിഷമില്ലാത്ത നാടൻ കുരുമുളക്."
+title: "Handheld Pepper Mill"
 description: "Best indoor plant to have fresh air."
-category: 'Plants'
+category: 'Kitchen'
 date: 2018-11-18T12:33:46+10:00
 weight: 1
-featured: true
+featured: false
 priceBefore: '2399.00'
 priceAfter: '1799.00'
 photos: 
-  - 'https://images.unsplash.com/photo-1600728255690-edd070021d02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2326&q=80'
+  - 'https://images.unsplash.com/photo-1648713329393-4aae32cb0772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'
 ---
 
-Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,
-clipeus fatetur, mira inter accedere. Dedit dum raptoresque Oete dolorem
-Cretaeas enim [ipse pectora excusat](#in-poscat) candentibus fertur? Furtiva
-Orontes Erysicthona dona, est per Achille viridi draconis cultis mota milia.
+Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
+crimen habet Priamum nec.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 

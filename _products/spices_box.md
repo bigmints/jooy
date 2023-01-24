@@ -1,7 +1,7 @@
 ---
 title: Spice Box
 description: Best indoor plant to have fresh air.
-category: Plants
+category: Cooking
 date: 2018-11-18 02:33:46 +0000
 weight: "1"
 featured: false
