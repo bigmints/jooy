@@ -9,7 +9,6 @@ featured: false
 priceBefore: "100"
 priceAfter: "0"
 photos: []
-published: false
 
 ---
 hfghfg
