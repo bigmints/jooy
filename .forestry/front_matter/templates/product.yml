@@ -39,3 +39,5 @@ fields:
 - type: image_gallery
   name: photos
   label: photos
+pages:
+- forestry.md
