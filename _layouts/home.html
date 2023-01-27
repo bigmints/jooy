@@ -45,8 +45,8 @@ bodyClass: "page-home"
           
           <div class="card-body">
             <span class="badge badge-light">{{ product.category }}</span>
-            <h3 class="service-title">
-              <a href="{{ product.url | relative_url }}">{{ product.title }}</a></h3>
+            <h2>
+              <a href="{{ product.url | relative_url }}">{{ product.title }}</a></h2>
               <h6 class="card-subtitle mb-2 "><del class="text-muted">₹{{product.priceBefore}}</del> <mark> ₹{{product.priceAfter}} </mark></h6>
               <!-- <p class="card-text service service-summary">{{ product.description | truncate: 100 }}</p> -->
               {% if product.stock %}

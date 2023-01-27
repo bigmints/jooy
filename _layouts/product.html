@@ -5,45 +5,34 @@ bodyClass: "page-product"
 <script type="text/javascript" src="{{ '/assets/js/splide.min.js' | relative_url }}"></script>
 <div class="container pb-6 pt-0 pt-md-5 pb-md-10">
   <div class="row justify-content-start">
-   
-    {% if page.photos %}
-
-
-
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          {% for slide in page.photos %}
-          <li class="splide__slide"><img src="{{ slide }}" alt="" class="img-responsive"  width="100%"></li>
-           
-          {% endfor %}
-          
-          ...
-        </ul>
+    <div class="col-12 col-md-7">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for slide in page.photos %}
+              <li class="splide__slide"><img src="{{ slide }}" alt="" class="img-responsive"  width="100%"></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- Add the progress bar element -->
+        <div class="my-slider-progress">
+          <div class="my-slider-progress-bar"></div>
+        </div>
       </div>
-      
-      <!-- Add the progress bar element -->
-      <div class="my-slider-progress">
-        <div class="my-slider-progress-bar"></div>
-      </div>
+      <script>
+        var splide = new Splide( '.splide' );
+        var bar    = splide.root.querySelector( '.my-carousel-progress-bar' );
+        // Updates the bar width whenever the carousel moves:
+        splide.on( 'mounted move', function () {
+          var end  = splide.Components.Controller.getEnd() + 1;
+          var rate = Math.min( ( splide.index + 1 ) / end, 1 );
+          bar.style.width = String( 100 * rate ) + '%';
+        });
+        splide.mount();
+      </script>
     </div>
-    
-    <script>
-      var splide = new Splide( '.splide' );
-      var bar    = splide.root.querySelector( '.my-carousel-progress-bar' );
-      
-      // Updates the bar width whenever the carousel moves:
-      splide.on( 'mounted move', function () {
-        var end  = splide.Components.Controller.getEnd() + 1;
-        var rate = Math.min( ( splide.index + 1 ) / end, 1 );
-        bar.style.width = String( 100 * rate ) + '%';
-      } );
-      
-      splide.mount();
-    </script>
-      {% endif %}
     <div class="col-12 col-md-5">
-      <div class="pb-2 pt-0 pt-md-2 pb-md-2">
+      <div class="pb-2 pt-2 pt-md-2 pb-md-2">
       <h1 class="">{{page.title}}</h1>
       <p>{{ page.description}}</p>
       <h3 class="card-subtitle mb-2"><del class="text-muted"> ₹{{page.priceBefore}}</del> <mark> ₹{{page.priceAfter}} </mark></h3>
