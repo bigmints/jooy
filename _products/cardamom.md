@@ -7,6 +7,7 @@ weight: 1
 featured: false
 priceBefore: '2399.00'
 priceAfter: '1799.00'
+stock: 100
 photos: 
   - '/images/products/cardamom.png'
 ---

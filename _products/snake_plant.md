@@ -7,6 +7,7 @@ weight: 1
 featured: false
 priceBefore: '2399.00'
 priceAfter: '1799.00'
+stock: 10
 photos: 
   - 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80'
 ---

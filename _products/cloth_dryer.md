@@ -7,6 +7,7 @@ weight: 1
 featured: true
 priceBefore: '2399.00'
 priceAfter: '1799.00'
+stock: 5
 photos: 
   - '/images/products/clothstand.png'
   - '/images/products/clothstand.png'
