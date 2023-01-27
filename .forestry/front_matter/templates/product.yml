@@ -26,6 +26,18 @@ fields:
 - type: text
   name: priceAfter
   label: priceAfter
+- name: stock
+  type: number
+  label: stock
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - type: image_gallery
   name: photos
   label: photos
+pages:
+- forestry.md
