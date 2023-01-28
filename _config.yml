@@ -16,11 +16,12 @@ home:
 collections:
   products:
     output: true
-    sort_by: weight
   blog:
     output: true
   team:
     output: true
+  
+
 
 defaults:
   - scope:
