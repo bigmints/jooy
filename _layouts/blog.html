@@ -18,7 +18,7 @@ bodyClass: "page-blog"
 </div>
 
 <div class="container">
-  {% for post in site.blog %}
+  {% for post in site.posts %}
   <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1> 
  {% endfor %}
 

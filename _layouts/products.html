@@ -16,17 +16,11 @@ bodyClass: "page-products"
 </div>
 
 <div class="container pt-6 pb-6">
-  <div class="alert alert-dark">
-   
-      {% for post in site.categories %}
-      <h1><a href="{{ post.url | relative_url }}">{{ post.name }}</a></h1> 
-     {% endfor %}
- 
-</div>
+
   {% assign categories = site.products | map: 'category' | join: ',' | split: ',' | uniq %}
   {% for category in categories %}  
   {% assign products = site.products | where:"category", {{category}} %}
-  <h1  id="{{ category }}">{{ category }}</h1>
+  <h1  id="{{ category }}">{{ category | capitalize }}</h1>
   <div class="row">
   {% for product in products  %}
     <div class="col-12 col-md-4 mb-4">

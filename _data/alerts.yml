@@ -1,1 +1,4 @@
-alert: A simple primary alert—check it out!
+error: A simple primary alert—check it out!
+out-of-service:
+out-of-stock:
+site-offline:

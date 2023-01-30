@@ -16,15 +16,8 @@ home:
 collections:
   products:
     output: true
-  blog:
-    output: true
-  team:
-    output: true
   categories:
     output: true
-  
-  
-
 
 defaults:
   - scope:
@@ -33,18 +26,15 @@ defaults:
     values:
       layout: "product"
   - scope:
-      path: ""
-      type: "blog"
+      path: ''          # An empty string here means all files in the project
+      type: posts
     values:
-      layout: "blogpost"
+      layout: post
   - scope:
       path: ""
       type: "categories"
     values:
       layout: "category"
-
-
-
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
