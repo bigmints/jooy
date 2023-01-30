@@ -2,9 +2,9 @@ main:
   - name: "Products"
     url: "/products/"
     weight: 2
-  # - name: "Team"
-  #   url: "/team/"
-  #   weight: 3
+  - name: "Categories"
+    url: "/categories/"
+    weight: 3
   - name: "Blog"
     url: "/blog/"
     weight: 4

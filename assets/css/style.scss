@@ -81,6 +81,14 @@ body {
   background-position: 0,0 !important;
   border-radius: 4px 4px 0px 0px;
 }
+.image-cover-category{
+  display: block;
+  background-size: cover !important;
+  min-height: 100px;
+  overflow: hidden;
+  background-position: 0,0 !important;
+  border-radius: 4px 4px 0px 0px;
+}
 .intro-image{
   border-radius: 4px;
 }

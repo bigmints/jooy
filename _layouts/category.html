@@ -1,0 +1,43 @@
+---
+layout: default
+bodyClass: "page-category"
+---
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ content }}
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="container pt-6 pb-6">
+  <div class="row">
+    {% assign slug = page.slug %}
+    {% assign products = site.products | where:"category", page.slug  %}
+    {% for product in products %}
+    <div class="col-12 col-md-6 mb-6">
+      <div class="card">
+        <div class="image-cover" style="background: url('{{product.photos[0]}}');"><img src="" class="card-img-top" /></div>
+        <div class="card-body">
+          <span class="overlay-badge"><span class="badge badge-light">{{ product.category }}</span></span>
+          <h2 class="service-title">
+            <a href="{{ product.url | relative_url }}">{{ product.title }}</a></h2>
+            <h6 class="card-subtitle mb-2 "><del class="text-muted">₹{{product.priceBefore}}</del> <mark> ₹{{product.priceAfter}} </mark></h6>
+            <!-- <p class="card-text service service-summary">{{ product.description | truncate: 100 }}</p> -->
+            {% if product.stock %}
+              {% if product.stock == 0 %} <button class="btn btn-disabled" disabled>Sold Out</button>{% endif %}
+              {% if product.stock >= 1 %} <a href="#" class="btn btn-primary">Order Now</a> {% endif %}
+            {% endif %}
+            <a href="{{ product.url | relative_url }}" class="card-link">View Details</a>
+            <!-- <a href="#" class="card-link">Another link</a> -->
+          </div>
+      </div>
+    </div>
+   
+    {% endfor %}
+    
+  </div>
+</div> 
+

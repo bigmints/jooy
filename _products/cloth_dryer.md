@@ -1,7 +1,7 @@
 ---
 title: "Cloth Dryer Rack"
 description: "Best indoor plant to have fresh air."
-category: 'Home'
+category: 'home'
 date: 2018-11-18T12:33:46+10:00
 weight: 1
 featured: true
