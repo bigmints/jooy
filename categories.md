@@ -4,5 +4,4 @@ layout: categories
 description: categories
 
 ---
-
-# JooY makes everyday things jooyful !
+# Find things you'll love. Only on JooY
