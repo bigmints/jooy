@@ -14,15 +14,16 @@ home:
   limit_services: 6
 
 collections:
-  deals:
+  products:
     output: true
   categories:
     output: true
+  
 
 defaults:
   - scope:
       path: ""
-      type: "deals"
+      type: "products"
     values:
       layout: "product"
   - scope:
