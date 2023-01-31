@@ -1,12 +1,10 @@
 ---
-title: About
+title: JooY celebrates unique, creative, sustainable products.
 layout: page
 description: About
 bodyClass: page-about
 
 ---
-# JooY celebrates unique, creative, sustainable products.
-
 Welcome to JooY.in, your one-stop marketplace for unique and creative goods. At JooY, we believe in the power of human connection and creativity, and our mission is to bring it back to the forefront of commerce.
 
 We offer a carefully curated collection of handpicked items chosen with you in mind. Our extensive research on customer needs ensures that you'll find practical and imaginative products. Whether you're looking for something special to brighten up your day or a thoughtful gift for someone else, JooY has you covered.
