@@ -6,7 +6,7 @@
 
 $primary: #235B7B;
 $primary-dark: #024c47;
-$secondary: #f88379;
+$secondary: #FBD26B;
 $black: #2f2f41;
 $white: #ffffff;
 $white-offset: #fff6f8;
@@ -105,4 +105,9 @@ body {
   height: 2px;
   transition: width 400ms ease;
   width: 0;
+}
+.home-jumbotron{
+  background-color: $secondary;
+  background-size: cover; 
+  background-position: top top;
 }

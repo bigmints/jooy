@@ -1,6 +1,6 @@
 main:
-  - name: "Products"
-    url: "/products/"
+  - name: "Deals"
+    url: "/deals/"
     weight: 2
   - name: "Categories"
     url: "/categories/"
