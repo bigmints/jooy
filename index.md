@@ -9,5 +9,3 @@ intro_image_absolute: false
 intro_image_hide_on_mobile: false
 show_call_box: false
 ---
-
-# JooY celebrates unique, creative, sustainable products.

@@ -1,10 +1,21 @@
 <div id="main-menu" class="main-menu">
-  {% assign mainmenu = site.data.menus.main   %}
-  <ul>
-    {% for item in mainmenu %}
-    <li class="{% if item.url == page.url %}active{% endif %}">
-      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+  {% if site.active_lang == "ml"%}
+    {% assign mainmenu = site.data.menus.main.ml.items   %}
+    <ul>
+      {% for item in mainmenu %}
+      <li class="{% if item.url == page.url %}active{% endif %}">
+        <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    {% assign mainmenu = site.data.menus.main.en.items  %}
+    <ul>
+      {% for item in mainmenu %}
+      <li class="{% if item.url == page.url %}active{% endif %}">
+        <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </div>

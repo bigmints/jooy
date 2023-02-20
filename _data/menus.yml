@@ -1,16 +1,33 @@
 main:
-  - name: "Products"
-    url: "/products/"
-    weight: 2
-  - name: "Categories"
-    url: "/categories/"
-    weight: 3
-  - name: "Blog"
-    url: "/blog/"
-    weight: 4
-  - name: "Support"
-    url: "/support/"
-    weight: 5
+  en: 
+    items:
+        - name: "Products"
+          url: "/products/"
+          weight: 2
+        - name: "Categories"
+          url: "/categories/"
+          weight: 3
+        - name: "Blog"
+          url: "/blog/"
+          weight: 4
+        - name: "Support"
+          url: "/support/"
+          weight: 5
+  ml:
+    items:
+      - name: "Products"
+        url: "ml/products/"
+        weight: 2
+      - name: "Categories"
+        url: "ml/categories/"
+        weight: 3
+      - name: "Blog"
+        url: "ml/blog/"
+        weight: 4
+      - name: "Support"
+        url: "ml/support/"
+        weight: 5
+
   
 
 footer:

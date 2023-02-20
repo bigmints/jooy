@@ -1,6 +1,8 @@
 baseurl: '/'
 permalink: pretty
 title: 'JooY.in'
+headline-ml : "വ്യത്യസ്തമായ ഉത്പന്നങ്ങൾ ജോയിൽ മാത്രം "
+headline-en : "JooY celebrates unique, creative, sustainable products."
 
 logo:
   mobile: "images/logo/logo-mobile.svg"

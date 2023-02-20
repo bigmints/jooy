@@ -1,0 +1,16 @@
+<div class=" pt-0 pb-2">
+  <div class="alert alert-info">
+    Change language
+    {% for lang in site.languages %}
+    {% if lang == site.active_lang %}
+      <span class="btn btn-secondary"> {% if lang == 'ml' %} മലയാളം {% else %}English {% endif %}</span>
+    {% else %}
+      {% if lang == site.default_lang %}
+        <a class="btn btn-disabled" href=" {{ page.url }}">{% if lang == 'ml' %} മലയാളം {% else %}English {% endif %}</a>
+      {% else %}
+        <a  class="btn btn-disabled"href="/{{ lang }}{{ page.url }}">{% if lang == 'ml' %} മലയാളം {% else %}English {% endif %}</a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
