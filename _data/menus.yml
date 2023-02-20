@@ -15,16 +15,16 @@ main:
           weight: 5
   ml:
     items:
-      - name: "Products"
+      - name: "ഓഫറുകൾ"
         url: "ml/products/"
         weight: 2
-      - name: "Categories"
+      - name: "വിഭാഗങ്ങൾ"
         url: "ml/categories/"
         weight: 3
       - name: "Blog"
         url: "ml/blog/"
         weight: 4
-      - name: "Support"
+      - name: "സഹായം"
         url: "ml/support/"
         weight: 5
 
