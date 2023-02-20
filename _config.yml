@@ -24,7 +24,7 @@ collections:
 languages: ["en", "ml"]
 default_lang: "en"
 exclude_from_localization: ["_sass", "images", "assets", "public", "admin"]
-lang_from_path: true
+lang_from_path: false
   
 
 defaults:
