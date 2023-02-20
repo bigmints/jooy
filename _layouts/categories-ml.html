@@ -1,0 +1,74 @@
+---
+layout: default
+bodyClass: "page-categories-ml"
+---
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-center">
+      
+      <div class="col-12 col-md-12 col-lg-12 ">
+        {{ content }}
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    {% assign categories = site.categories | where:"lang", "ml" %}  
+    {% for post in categories %}
+  <div class="col-12 col-md-3 mb-3">
+    <div class="card">
+      <div class="image-cover-category" style="background: url('{{post.image}}');"><img src="" class="card-img-top" /></div>
+      <div class="card-body">
+       
+        <h2 class="service-title"><a href="{{ post.url | relative_url }}">{{ post.name }}</a></h2>
+        </div>
+    </div>
+  </div>
+  
+ {% endfor %}
+</div>
+</div>
+
+<div class="strip pt-4" ><div class="container">
+  <h1>Featured Products</h1>
+  <!-- <p class="service service-summary">Featured products this week</p> -->
+
+
+</div></div>
+
+
+<div class="strip">
+  <div class="container pt-1 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      {% assign limit = site.home.limit_products | default: 12 %}
+      {% for product in site.products limit: limit %}
+      {% if product.featured %}
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card">
+          <div class="image-cover" style="background: url('{{product.photos[0]}}');"><img src="" class="card-img-top" /></div>
+          
+          <div class="card-body">
+            <span class="badge badge-light">{{ product.category }}</span>
+            <h2>
+              <a href="{{ product.url | relative_url }}">{{ product.title }}</a></h2>
+              <h6 class="card-subtitle mb-2 "><del class="text-muted">₹{{product.priceBefore}}</del> <mark> ₹{{product.priceAfter}} </mark></h6>
+              <!-- <p class="card-text service service-summary">{{ product.description | truncate: 100 }}</p> -->
+              {% if product.stock %}
+      {% if product.stock == 0 %} <button class="btn btn-disabled" disabled>Sold Out</button>{% endif %}
+      {% if product.stock >= 1 %} <a href="#" class="btn btn-primary">Order Now</a> {% endif %}
+      {% endif %}
+              <a href="{{ product.url | relative_url }}" class="card-link">View Details</a>
+              <!-- <a href="#" class="card-link">Another link</a> -->
+            </div>
+        </div>
+      </div>
+      {% endif%}
+      {% endfor %}
+    </div>
+    
+  </div>
+</div>
+    

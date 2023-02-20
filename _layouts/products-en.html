@@ -1,0 +1,74 @@
+---
+layout: default
+bodyClass: "page-products-en"
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-center">
+      
+      <div class="col-12 col-md-12 col-lg-12 ">
+        {{ content }}
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<div class="container pt-6 pb-6">
+
+  {% assign categories = site.products | map: 'slug' | join: ',' | split: ',' | uniq %}
+  {% for category in categories %}  
+  {% assign products = site.products | where:"slug", {{category}} %}
+  <h1  id="{{ category }}">{{ category | capitalize }}</h1>
+  <div class="row">
+  {% for product in products  %}
+    <div class="col-12 col-md-4 mb-4">
+      <a href="{{ product.url | relative_url }}">
+      <div class="card">
+        <div class="image-cover" style="background: url('{{product.photos[0]}}');"><img src="" class="card-img-top" /></div>
+        <div class="card-body">
+          <span class="overlay-badge"><span class="badge badge-light">{{ product.category }}</span></span>
+          <h2 class="service-title">
+           {{ product.title }}</h2>
+            <h6 class="card-subtitle mb-2 "><del class="text-muted">₹{{product.priceBefore}}</del> <mark> ₹{{product.priceAfter}} </mark></h6>
+            <!-- <p class="card-text service service-summary">{{ product.description | truncate: 100 }}</p> -->
+            {% if product.stock %}
+              {% if product.stock == 0 %} <button class="btn btn-disabled" disabled>Sold Out</button>{% endif %}
+              {% if product.stock >= 1 %} <a href="{{ site.data.urls.order_url }}" class="btn btn-primary">Order Now</a> {% endif %}
+            {% endif %}
+            
+            <!-- <a href="#" class="card-link">Another link</a> -->
+          </div>
+      </div>
+    </a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %} 
+</div> 
+
+
+
+<!-- <div class="container pt-6 pb-6">
+  <div class="row">
+    {% for product in site.data.products %}
+    <div class="col-12 col-md-4 mb-3">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80" class="card-img-top" />
+        
+        <div class="card-body">
+          <h2 class="service-title">
+            <a href="{{ product.url | relative_url }}">{{ product.title }}</a></h2>
+            <h6 class="card-subtitle mb-2 "><del class="text-muted">₹{{product.priceBefore}}</del> <mark> ₹{{product.priceAfter}} </mark></h6>
+            <p class="card-text service service-summary">{{ product.description | truncate: 100 }}</p>
+            <a href="#" class="btn btn-primary">Buy Now</a> 
+            <a href="{{ product.url | relative_url }}" class="card-link">View Details</a>
+            
+          </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div> -->
+

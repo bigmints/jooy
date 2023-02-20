@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: '/'
 permalink: pretty
 title: 'JooY.in'
 
@@ -18,6 +18,11 @@ collections:
     output: true
   categories:
     output: true
+
+languages: ["en", "ml"]
+default_lang: "en"
+exclude_from_localization: ["_sass", "images", "assets", "public", "admin"]
+lang_from_path: true
   
 
 defaults:
@@ -28,9 +33,9 @@ defaults:
       layout: "product"
   - scope:
       path: ''          # An empty string here means all files in the project
-      type: posts
+      type: "posts"
     values:
-      layout: post
+      layout: "post"
   - scope:
       path: ""
       type: "categories"
@@ -38,10 +43,16 @@ defaults:
       layout: "category"
 
 sass:
-  style: compressed # possible values: nested expanded compact compressed
+  style: expanded # possible values: nested expanded compact compressed
+  sourcemap: never
+  line_comments: true
 
 plugins:
   - jekyll-environment-variables
+  - jekyll-polyglot
+
+jekyll_admin:
+  homepage: "posts"
 
 exclude:
   - Gemfile

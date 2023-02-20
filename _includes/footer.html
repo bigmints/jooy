@@ -12,6 +12,19 @@
             </li>
             {% endfor %}
           </ul>
+          <div class="language-switch">
+            {% for lang in site.languages %}
+              {% if lang == site.active_lang %}
+                <span class="btn btn-secondary">{{ lang }}</span>
+              {% else %}
+                {% if lang == site.default_lang %}
+                  <a class="btn btn-disabled" href=" {{ page.url }}">{{ lang }}</a>
+                {% else %}
+                  <a  class="btn btn-disabled"href="/{{ lang }}{{ page.url }}">{{ lang }}</a>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>
